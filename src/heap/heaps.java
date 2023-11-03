@@ -23,11 +23,11 @@ public class heaps {
 
         int midIdx = idx;
 
-        if(left<arr.size()&&arr.get(left)<arr.get(midIdx)){
+        if(left<n&&arr.get(left)<arr.get(midIdx)){
             midIdx = left;
         }
 
-        if(right<arr.size()&&arr.get(right)<arr.get(midIdx)){
+        if(right<n&&arr.get(right)<arr.get(midIdx)){
             midIdx = right;
         }
 

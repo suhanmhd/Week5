@@ -131,11 +131,14 @@ public  Node inorderSuccessor(Node root){
             return 1+Math.max(leftLength , rightLength);
 
     }
+
+
     public static void main(String[] args) {
         Btree btree = new Btree();
         btree.insert(10);
         btree.insert(12);
         btree.insert(7);
+
 
         btree.insert(3);
         btree.insert(23);
@@ -152,6 +155,9 @@ public  Node inorderSuccessor(Node root){
 //        System.out.println();
 //        btree.postorderTraversal(btree.root);
         System.out.println();
-        System.out.println(btree.getLength(btree.root));
+        System.out.println("Length of the tree is : "+btree.getLength(btree.root));
+
+        int diameter=btree.diameterOfBinaryTree(btree.root);
+        System.out.println("diameter of the tree is : "+diameter);
     }
 }
