@@ -157,7 +157,7 @@ public  Node inorderSuccessor(Node root){
         System.out.println();
         System.out.println("Length of the tree is : "+btree.getLength(btree.root));
 
-        int diameter=btree.diameterOfBinaryTree(btree.root);
-        System.out.println("diameter of the tree is : "+diameter);
+//        int diameter=btree.diameterOfBinaryTree(btree.root);
+//        System.out.println("diameter of the tree is : "+diameter);
     }
 }

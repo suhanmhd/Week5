@@ -17,6 +17,8 @@ public class Graph {
         }
 
     }
+
+
        private int v;
    private ArrayList<Edge>graph[];
 
@@ -34,7 +36,7 @@ public class Graph {
    }
 
   public  void BFS(){
-       boolean[] visted= new boolean[v];
+       boolean[] visted = new boolean[v];
       Queue<Integer> q = new LinkedList<>();
       for(int j=0;j<v;j++) {
           if (!visted[j]) {
@@ -45,11 +47,11 @@ public class Graph {
 
                       System.out.print(curr + " ");
 
-                      for (int i = 0; i < graph[curr].size(); i++) {
+                      for(int i = 0; i < graph[curr].size(); i++) {
                           Edge e = graph[curr].get(i);
                            if(!visted[e.dest]){
                                q.add(e.dest);
-                               visted[e.dest]=true;
+                               visted[e.dest] = true;
                            }
 
                       }
@@ -184,7 +186,6 @@ public class Graph {
                 System.out.println();
             }
         }
-
         public void removeEdge ( int src, int dest){
             for (int i = 0; i < graph[src].size(); i++) {
                 if (graph[src].get(i).dest == dest) {
