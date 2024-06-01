@@ -109,8 +109,11 @@ public class tries {
         curr.isWordEnd = false;
 
         while (!stack.isEmpty() && !root.isWordEnd && curr.children.isEmpty()) {
+            System.out.println(curr.children.isEmpty());
             Node prev = stack.pop();
             curr.children.remove(str.charAt(stack.size()));
+            System.out.println(stack.size());
+
             curr = prev;
 
         }
@@ -123,6 +126,7 @@ public class tries {
 
         obj.addelement("helloworld");
         obj.addelement("banana");
+        obj.addelement("ban");
 
         System.out.println(obj.contains("hello"));
         System.out.println(obj.traversal());

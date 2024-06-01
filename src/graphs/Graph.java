@@ -20,7 +20,7 @@ public class Graph {
 
 
        private int v;
-   private ArrayList<Edge>graph[];
+   private ArrayList<Edge> graph[];
 
    Graph(int v){
        this.v=v;
